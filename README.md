@@ -1,12 +1,20 @@
 # Three U.S. rivers | Daily streamflow dashboard
 
-**Status: validated dataset and report specification; Power BI report and public repository pending.**
+**Status: published two-page Power BI report, validated dataset, and downloadable PDF.**
 
 This project compares daily mean discharge at three named USGS streamgages in 2024–2025. It is a site-level time-series study, not a national river assessment or flood-warning system.
 
-## Question and intended Power BI report
+## Question and Power BI report
 
-How do daily and monthly discharge patterns differ at three gauges, and when do high-flow days cluster within each gauge's own 2024–2025 distribution? The report will show available days, median discharge, and above-site-90th-percentile days as KPIs; a date hierarchy for year → quarter → month drill; site and quality-status filters; a daily trend; and site/year comparisons. A data-quality page will separate approved, estimated, and provisional observations.
+How do daily and monthly discharge patterns differ at three gauges, and when do high-flow days cluster within each gauge's own 2024–2025 distribution?
+
+- [Open the interactive Power BI report](https://app.powerbi.com/groups/e6426da3-9b36-4519-acf1-2434daa552ae/reports/6240d432-1b9b-4ade-9511-70aed291254d/ee4457522652240e0d70?experience=power-bi) (Power BI sign-in may be required).
+- [Download the two-page PDF](three_rivers_streamflow_report.pdf).
+- Page 1 shows median daily discharge, a gauge comparison, a 24-month trend, and gauge/year controls. Page 2 shows site-day count, above-site-p90 composition, quality qualifiers, and a gauge selector. Clicking charts cross-filters related visuals.
+
+![Power BI overview page](dashboard_overview.png)
+
+![Power BI quality and threshold page](dashboard_quality.png)
 
 ## Source and reproduction
 
@@ -31,4 +39,6 @@ See [metric notes and findings](FINDINGS.md) and [machine-readable validation](v
 | `usgs_daily_streamflow_2024_2025.csv` | Curated Power BI source at site-day grain |
 | `validation_summary.json` | Source URL, missingness, qualifiers, and checked metrics |
 | `FINDINGS.md` | Definitions, descriptive findings, and limits |
+| `three_rivers_streamflow_report.pdf` | Export of both Power BI pages, showing all three gauges |
+| `dashboard_overview.png`, `dashboard_quality.png` | Verified page previews |
 
