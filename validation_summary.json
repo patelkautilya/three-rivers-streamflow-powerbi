@@ -1,0 +1,45 @@
+{
+  "retrieved_at_utc": "2026-11-05T11:09:19+00:00",
+  "source_url": "https://waterservices.usgs.gov/nwis/dv/?format=json&sites=01646500%2C05331000%2C09402500&startDT=2024-01-01&endDT=2025-12-31&parameterCd=00060&statCd=00003",
+  "source_site_names": {
+    "01646500": "POTOMAC RIVER NEAR WASH, DC LITTLE FALLS PUMP STA",
+    "05331000": "MISSISSIPPI RIVER AT ST. PAUL, MN",
+    "09402500": "COLORADO RIVER NEAR GRAND CANYON, AZ"
+  },
+  "period": {
+    "start": "2024-01-01",
+    "end": "2025-12-31"
+  },
+  "grain": "one site per calendar day",
+  "rows": 2193,
+  "expected_days_per_site": 731,
+  "missing_rows": 0,
+  "qualifiers": {
+    "A": 2115,
+    "A;e": 33,
+    "P": 45
+  },
+  "site_checks": {
+    "01646500": {
+      "available_days": 731,
+      "median_daily_cfs": 5150.0,
+      "p90_daily_cfs_nearest_rank": 21200.0,
+      "days_above_site_p90": 73,
+      "maximum_daily_cfs": 136000.0
+    },
+    "05331000": {
+      "available_days": 731,
+      "median_daily_cfs": 11900.0,
+      "p90_daily_cfs_nearest_rank": 42900.0,
+      "days_above_site_p90": 73,
+      "maximum_daily_cfs": 114000.0
+    },
+    "09402500": {
+      "available_days": 731,
+      "median_daily_cfs": 10900.0,
+      "p90_daily_cfs_nearest_rank": 12700.0,
+      "days_above_site_p90": 56,
+      "maximum_daily_cfs": 15000.0
+    }
+  }
+}
